@@ -1,129 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main class="card">
-        <div class="container card__container">
-            <div class="card__preview preview">
-                <span class="preview__index">RT34FY</span>
-                <div class="preview__img">
-                    <img src="img_1.jpg" alt="Modern Yellow Chair">
-                </div>
-                
-                <div class="preview__pagination">
-                    <span class="preview__pagination-btn yellow-btn">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12.5" cy="12.5" r="12.5" fill="currentColor"/>
-                        </svg>
-                    </span>
-                    <span class="preview__pagination-btn">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12.5" cy="12.5" r="12.5" fill="currentColor"/>
-                        </svg>
-                    </span>
-                    <span class="preview__pagination-btn">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12.5" cy="12.5" r="12.5" fill="currentColor"/>
-                        </svg>
-                    </span>
-                </div>
+      <div class="container card__container">
+        <div class="card__preview preview" data-js="slider">
+          <div class="preview__item is-active" data-js="preview-item">
+            <span class="preview__index">RT34FY</span>
+            <div class="preview__img">
+              <img src="img_1.jpg" alt="Modern Yellow Chair" />
             </div>
-
-            <div class="card__description description">
-                <span class="description__category">CHAIRS</span>
-                <h1 class="description__title">Modern Yellow Chair</h1>
-                <p class="description__model">Tinners House</p>
-
-                <div class="description__values">
-                    <span class="description__price">$420</span>
-
-                    <div class="description__rate">
-                        <span class="description__star">
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z" fill="currentColor"/>
-                            </svg>                                
-                        </span>
-                        <span class="description__star">
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z" fill="currentColor"/>
-                            </svg>
-                        </span>
-                        <span class="description__star">
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z" fill="currentColor"/>
-                            </svg>
-                        </span>
-                        <span class="description__star">
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z" fill="currentColor"/>
-                            </svg>
-                        </span>
-                        <span class="description__star gray-star">
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z" fill="currentColor"/>
-                            </svg>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="description__headers headers">
-                    <h3 class="description__subtitle subtitle-active">DESCRIPTION</h3>
-                    <h3 class="description__subtitle">DETAILS</h3>
-                    <h3 class="description__subtitle">COMMENTS</h3>
-                </div>
-
-                <div class="description__text">
-                    <p class="text text-active">11111Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid adipisci dolore, id culpa, reiciendis voluptate ad consequuntur repellat architecto facilis aperiam soluta nemo mollitia quisquam assumenda incidunt itaque, cum molestiae!</p>
-
-                    <p class="text">22222Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid adipisci dolore, id culpa, reiciendis voluptate ad consequuntur repellat architecto facilis aperiam soluta nemo mollitia quisquam assumenda incidunt itaque, cum molestiae!</p>
-
-                    <p class="text">33333Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid adipisci dolore, id culpa, reiciendis voluptate ad consequuntur repellat architecto facilis aperiam soluta nemo mollitia quisquam assumenda incidunt itaque, cum molestiae!</p>
-                </div>
-                
-                <div class="description__action-headers headers">
-                    <h3 class="description__subtitle">COLOR</h3>
-                    <h3 class="description__subtitle">QUANTITY</h3>
-                    <h3 class="description__subtitle">TOTAL PRICE</h3>
-                </div>
-
-                <div class="description__actions action">
-                    <div class="action__color bg">
-                        <div>
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="24" cy="24" r="24" fill="#EDC42C" />
-                            </svg>
-                        </div>
-                        <div>
-                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.60591 8.8366C6.80628 9.91382 5.19372 9.91382 4.39409 8.8366L0.575276 3.69208C-0.40434 2.37239 0.537643 0.500001 2.18118 0.500001L9.81882 0.500001C11.4624 0.500002 12.4043 2.37239 11.4247 3.69208L7.60591 8.8366Z" fill="white" />
-                            </svg>
-                        </div>
-                    </div>
-                    
-                    <div class="action__quantity bg">
-                        <span class="plus">-</span>
-                        <span>2</span>
-                        <span class="minus">+</span>
-                    </div>
-
-                    <div class="action__price bg">
-                        <span>$</span><span>840</span>
-                    </div>
-                </div>
-
-                <button class="btn-wishlist btn">ADD TO MY WISHLIST</button>
-                <button class="btn-cart btn">ADD TO CART</button>
+          </div>
+          <div class="preview__item" data-js="preview-item">
+            <span class="preview__index">RT64AB</span>
+            <div class="preview__img">
+              <img src="img_2.jpg" alt="Modern Grayscale Chair" />
             </div>
+          </div>
+          <div class="preview__item" data-js="preview-item">
+            <span class="preview__index">RT98MO</span>
+            <div class="preview__img">
+              <img src="img_3.jpg" alt="Modern Unknown Chair" />
+            </div>
+          </div>
+
+          <div class="preview__pagination">
+            <span
+              class="preview__pagination-btn yellow-btn"
+              data-js="pagination-btn"
+            >
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12.5" cy="12.5" r="12.5" fill="currentColor" />
+              </svg>
+            </span>
+            <span class="preview__pagination-btn" data-js="pagination-btn">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12.5" cy="12.5" r="12.5" fill="currentColor" />
+              </svg>
+            </span>
+            <span class="preview__pagination-btn" data-js="pagination-btn">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12.5" cy="12.5" r="12.5" fill="currentColor" />
+              </svg>
+            </span>
+          </div>
         </div>
+
+        <div class="card__description description">
+          <span class="description__category">CHAIRS</span>
+          <h1 class="description__title">Modern Yellow Chair</h1>
+          <p class="description__model">Tinners House</p>
+
+          <div class="description__values">
+            <span class="description__price">$420</span>
+
+            <div class="description__rate">
+              <span class="description__star">
+                <svg
+                  width="31"
+                  height="30"
+                  viewBox="0 0 31 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="description__star">
+                <svg
+                  width="31"
+                  height="30"
+                  viewBox="0 0 31 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="description__star">
+                <svg
+                  width="31"
+                  height="30"
+                  viewBox="0 0 31 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="description__star">
+                <svg
+                  width="31"
+                  height="30"
+                  viewBox="0 0 31 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="description__star gray-star">
+                <svg
+                  width="31"
+                  height="30"
+                  viewBox="0 0 31 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.4978 1.85411C14.0965 0.011487 16.7034 0.0114808 17.3021 1.8541L19.531 8.71405C19.7987 9.53809 20.5666 10.096 21.4331 10.096L28.6461 10.096C30.5835 10.096 31.3891 12.5752 29.8216 13.714L23.9862 17.9537C23.2853 18.463 22.9919 19.3658 23.2597 20.1898L25.4886 27.0497C26.0873 28.8924 23.9784 30.4246 22.4109 29.2858L16.5755 25.0461C15.8745 24.5368 14.9253 24.5368 14.2244 25.0461L8.38895 29.2858C6.82152 30.4246 4.71257 28.8924 5.31127 27.0497L7.5402 20.1898C7.80795 19.3657 7.51464 18.463 6.81366 17.9537L0.978236 13.714C-0.589192 12.5752 0.216364 10.096 2.15381 10.096L9.36679 10.096C10.2332 10.096 11.0012 9.53809 11.2689 8.71405L13.4978 1.85411Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="tabs" data-js="tabs">
+            <div class="description__headers headers" data-js="tabs-nav">
+              <h3 class="description__subtitle subtitle-active">DESCRIPTION</h3>
+              <h3 class="description__subtitle">DETAILS</h3>
+              <h3 class="description__subtitle">COMMENTS</h3>
+            </div>
+            <div data-js="tabs-content">
+              <div class="description__text">
+                <p class="text text-active">
+                  11111Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid adipisci dolore, id culpa, reiciendis voluptate ad
+                  consequuntur repellat architecto facilis aperiam soluta nemo
+                  mollitia quisquam assumenda incidunt itaque, cum molestiae!
+                </p>
+
+                <p class="text">
+                  22222Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid adipisci dolore, id culpa, reiciendis voluptate ad
+                  consequuntur repellat architecto facilis aperiam soluta nemo
+                  mollitia quisquam assumenda incidunt itaque, cum molestiae!
+                </p>
+
+                <p class="text">
+                  33333Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid adipisci dolore, id culpa, reiciendis voluptate ad
+                  consequuntur repellat architecto facilis aperiam soluta nemo
+                  mollitia quisquam assumenda incidunt itaque, cum molestiae!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="description__action-headers headers">
+            <h3 class="description__subtitle">COLOR</h3>
+            <h3 class="description__subtitle">QUANTITY</h3>
+            <h3 class="description__subtitle">TOTAL PRICE</h3>
+          </div>
+
+          <div class="description__actions action">
+            <div class="action__color bg">
+              <div>
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="24" cy="24" r="24" fill="#EDC42C" />
+                </svg>
+              </div>
+              <div>
+                <svg
+                  width="12"
+                  height="10"
+                  viewBox="0 0 12 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.60591 8.8366C6.80628 9.91382 5.19372 9.91382 4.39409 8.8366L0.575276 3.69208C-0.40434 2.37239 0.537643 0.500001 2.18118 0.500001L9.81882 0.500001C11.4624 0.500002 12.4043 2.37239 11.4247 3.69208L7.60591 8.8366Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="action__quantity bg">
+              <span class="plus">-</span>
+              <span>2</span>
+              <span class="minus">+</span>
+            </div>
+
+            <div class="action__price bg"><span>$</span><span>840</span></div>
+          </div>
+
+          <button class="btn-wishlist btn">ADD TO MY WISHLIST</button>
+          <button class="btn-cart btn">ADD TO CART</button>
+        </div>
+      </div>
     </main>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
